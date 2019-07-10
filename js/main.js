@@ -1,1 +1,2 @@
-Board = new Board();
+board = new Board();
+board.create();
