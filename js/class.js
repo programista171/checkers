@@ -40,8 +40,7 @@ class Game {
 
 class Board {
 	constructor() {
-		canvas = document.querySelector(`#board`);
-		ctx = canvas.getContext('2d');
+		this.canvas = document.querySelector(`#board`).getContext('2d');
 
 	}//constructor
 
@@ -50,7 +49,7 @@ class Board {
 	}//clear
 
 	create() {
-		ctx.fillRect(25,25,100,100);
+		this.canvas.fillRect(25,25,100,100);
 	}//create
 
 	refresh() {
