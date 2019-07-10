@@ -48,9 +48,11 @@ class Board {
   }
 
 	create() {
-alert("It works!");
+		let canvas = document.querySelector(`#board`);
+		let ctx = canvas.getContext('2d');
+		ctx.fillRect(25,25,100,100);
 
-	}
+	}//create
 
   refreshBoard() {
 
