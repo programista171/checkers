@@ -52,10 +52,13 @@ class Board {
 		this.x = 0;
 		this.y = 0;
 		this.canvas.fillStyle = '#FFFDD0';
-		for(i = 1; i <= 4; i++){
-			this.canvas.fillRect(this.x,this.y,100,100);
-			this.x+=200;
-		}//for
+		for(this.i = 1; this.i <= 4; this.i++){
+				for(this.j = 1; this.j <= 4; this.j++){
+					this.canvas.fillRect(this.x,this.y,100,100);
+					this.x+=200;
+				}//for maly
+			this.y+=200;
+		}//for duzy
 	}//create
 
 	refresh() {
