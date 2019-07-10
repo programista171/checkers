@@ -49,7 +49,13 @@ class Board {
 	}//clear
 
 	create() {
-		this.canvas.fillRect(25,25,100,100);
+		this.x = 0;
+		this.y = 0;
+		this.canvas.fillStyle = '#FFFDD0';
+		for(i = 1; i <= 4; i++){
+			this.canvas.fillRect(this.x,this.y,100,100);
+			this.x+=200;
+		}//for
 	}//create
 
 	refresh() {
