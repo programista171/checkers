@@ -57,6 +57,7 @@ class Board {
 					this.canvas.fillRect(this.x,this.y,100,100);
 					this.x+=200;
 				}//for maly
+			this.x = 0;
 			this.y+=200;
 		}//for duzy
 	}//create
