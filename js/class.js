@@ -39,22 +39,21 @@ class Game {
 }
 
 class Board {
-  constructor() {
+	constructor() {
+		canvas = document.querySelector(`#board`);
+		ctx = canvas.getContext('2d');
 
-  }
+	}//constructor
 
-  clearBoard() {
+	clear() {
 
-  }
+	}//clear
 
 	create() {
-		let canvas = document.querySelector(`#board`);
-		let ctx = canvas.getContext('2d');
 		ctx.fillRect(25,25,100,100);
-
 	}//create
 
-  refreshBoard() {
+	refresh() {
 
-  }
+	}//refresh
 }
