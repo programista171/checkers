@@ -53,8 +53,8 @@ class Board {
 			var y = 0;
 			//kolor kwadratu kremowy
 			this.canvas.fillStyle = '#FFFDD0';
-			for(i = 1; i <= 4; i++){
-					for(j = 1; j <= 4; j++){
+			for(var i = 1; i <= 4; i++){
+					for(var j = 1; j <= 4; j++){
 							//rysujemy 16 kremowych kwadratów
 							this.canvas.fillRect(x,y,100,100);
 							x+=200;
@@ -65,8 +65,8 @@ class Board {
 			//zjeżdżamy w dół i w prawo o 100 px
 			x = 100;
 			y = 100;
-			for(i = 1; i <= 4; i++){
-					for(j = 1; j <= 4; j++){
+			for(var i = 1; i <= 4; i++){
+					for(var j = 1; j <= 4; j++){
 							//rysujemy 16 kolejnych kremowych kwadratów
 							this.canvas.fillRect(x,y,100,100);
 							x+=200;
@@ -80,8 +80,8 @@ class Board {
 			this.canvas.fillStyle = 'brown';
 			x = 0;
 			y = 100;
-			for(i = 1; i <= 4; i++){
-					for(j = 1; j <= 4; j++){
+			for(var i = 1; i <= 4; i++){
+					for(var j = 1; j <= 4; j++){
 							//rysujemy 16 brązowych kwadratów
 							this.canvas.fillRect(x,y,100,100);
 							x+=200;
@@ -91,8 +91,8 @@ class Board {
 				}//for duzy
 			x = 100;
 			y = 0;
-			for(i = 1; i <= 4; i++){
-					for(j = 1; j <= 4; j++){
+			for(var i = 1; i <= 4; i++){
+					for(var j = 1; j <= 4; j++){
 							//rysujemy 16 kolejnych brązowych kwadratów
 							this.canvas.fillRect(x,y,100,100);
 							x+=200;
