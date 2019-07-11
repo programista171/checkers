@@ -49,33 +49,58 @@ class Board {
 	}//clear
 
 	create() {
-			this.x = 0;
-			this.y = 0;
+			var x = 0;
+			var y = 0;
 			//kolor kwadratu kremowy
 			this.canvas.fillStyle = '#FFFDD0';
-			for(this.i = 1; this.i <= 4; this.i++){
-					for(this.j = 1; this.j <= 4; this.j++){
+			for(i = 1; i <= 4; i++){
+					for(j = 1; j <= 4; j++){
 							//rysujemy 16 kremowych kwadratów
-							this.canvas.fillRect(this.x,this.y,100,100);
-							this.x+=200;
+							this.canvas.fillRect(x,y,100,100);
+							x+=200;
 						}//for maly
-					this.x = 0;
-					this.y+=200;
+					x = 0;
+					y+=200;
 				}//for duzy
-	this.x = 100;
-	this.y = 100;
-		for(this.i = 1; this.i <= 4; this.i++){
-				for(this.j = 1; this.j <= 4; this.j++){
-					//rysujemy 16 kolejnych kremowych kwadratów
-					this.canvas.fillRect(this.x,this.y,100,100);
-					this.x+=200;
-				}//for maly
-			this.x = 100;
-			this.y+=200;
-		}//for duzy
-	//teraz mamy już 32 kremowe kwadraty
-		//kolor kwadratu brązowy
-		this.canvas.fillStyle = 'brown';	}//create
+			//zjeżdżamy w dół i w prawo o 100 px
+			x = 100;
+			y = 100;
+			for(i = 1; i <= 4; i++){
+					for(j = 1; j <= 4; j++){
+							//rysujemy 16 kolejnych kremowych kwadratów
+							this.canvas.fillRect(x,y,100,100);
+							x+=200;
+						}//for maly
+					x = 100;
+					y+=200;
+				}//for duzy
+			//teraz mamy już 32 kremowe kwadraty
+
+			//kolor kwadratu brązowy
+			this.canvas.fillStyle = 'brown';
+			x = 0;
+			y = 100;
+			for(i = 1; i <= 4; i++){
+					for(j = 1; j <= 4; j++){
+							//rysujemy 16 brązowych kwadratów
+							this.canvas.fillRect(x,y,100,100);
+							x+=200;
+						}//for maly
+					x = 0;
+					y+=200;
+				}//for duzy
+			x = 100;
+			y = 0;
+			for(i = 1; i <= 4; i++){
+					for(j = 1; j <= 4; j++){
+							//rysujemy 16 kolejnych brązowych kwadratów
+							this.canvas.fillRect(x,y,100,100);
+							x+=200;
+						}//for maly
+					x = 100;
+					y+=200;
+				}//for duzy
+		}//create
 
 	refresh() {
 
