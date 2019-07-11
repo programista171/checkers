@@ -49,18 +49,33 @@ class Board {
 	}//clear
 
 	create() {
-		this.x = 0;
-		this.y = 0;
-		this.canvas.fillStyle = '#FFFDD0';
+			this.x = 0;
+			this.y = 0;
+			//kolor kwadratu kremowy
+			this.canvas.fillStyle = '#FFFDD0';
+			for(this.i = 1; this.i <= 4; this.i++){
+					for(this.j = 1; this.j <= 4; this.j++){
+							//rysujemy 16 kremowych kwadratów
+							this.canvas.fillRect(this.x,this.y,100,100);
+							this.x+=200;
+						}//for maly
+					this.x = 0;
+					this.y+=200;
+				}//for duzy
+	this.x = 100;
+	this.y = 100;
 		for(this.i = 1; this.i <= 4; this.i++){
 				for(this.j = 1; this.j <= 4; this.j++){
+					//rysujemy 16 kolejnych kremowych kwadratów
 					this.canvas.fillRect(this.x,this.y,100,100);
 					this.x+=200;
 				}//for maly
-			this.x = 0;
+			this.x = 100;
 			this.y+=200;
 		}//for duzy
-	}//create
+	//teraz mamy już 32 kremowe kwadraty
+		//kolor kwadratu brązowy
+		this.canvas.fillStyle = 'brown';	}//create
 
 	refresh() {
 
